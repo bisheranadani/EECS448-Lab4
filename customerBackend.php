@@ -24,7 +24,9 @@
 
   echo "</tr>";
 
+  $shipping = 0;
   $totalc = 0;
+
   echo "<h2>Receipt</h2>";
   for($i=0; $i < 3; $i++){
     $item = "";
@@ -53,6 +55,23 @@
     echo "<td>" . $cost . "</td>";
     echo "</tr>";
   }
+
+  if($_POST["ship"] == "free"){
+    $shipping = 0;
+  }
+  if($_POST["ship"] == "fifty"){
+    $shipping = 50;
+  }
+  if($_POST["ship"] == "five"){
+    $shipping = 5;
+  }
+
+  echo '<tr>';
+  echo '<td colspan="3">' . "Shipping" . "</td>";
+  echo "<td>" . $shipping . "</td>";
+  echo '</tr>';
+
+  $totalc = $totalc + $shipping;
   echo '<tr>';
   echo '<td colspan="3">' . "Total Cost" . "</td>";
   echo "<td>" . $totalc . "</td>";

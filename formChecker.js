@@ -1,3 +1,5 @@
+//got help from various stackoverflow questions, specifically the isEmail function and creating the values array
+
 var radio = "";
 function isEmail(email) {
   var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -32,8 +34,10 @@ $(document).ready(function(){
       event.preventDefault();
     }
   });
-  $("#reset").click(function(){
-    document.getElementById("form").reset();
+
+  $("#resetBtn").click(function(){
+    // document.getElementById("form").reset();
+    // alert("hello");
     window.location.reload(false);
   });
 });
