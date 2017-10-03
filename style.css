@@ -1,0 +1,21 @@
+body {
+  background-color: #1569C7;
+}
+h1{
+  color: white;
+  font-size: 50px;
+  font-style: sans-serif;
+}
+h2, h3{
+  color: #E56717;
+}
+th, td{
+  border: 1px solid black;
+}
+td{
+  padding: 2px;
+}
+
+label{
+  color: #52D017;
+}
