@@ -1,12 +1,49 @@
-<html>
-    <head>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Quiz</title>
+</head>
 <body>
-
-    <form action="quiz.php" method="post">
-        Name: <input type="text" name="name"><br>
-        E-mail: <input type="text" name="email"><br>
-        <input type="submit">
-    </form>
+  <form action="quiz.php" method="post">
+      <label for="color">What is the best color in the world?</label><br>
+      <input type="hidden" name="color-label" value="What is the best color in the world?">
+      <input type="radio" name="color" value="Blue" checked="checked">Blue
+      <input type="radio" name="color" value="Green">Green
+      <input type="radio" name="color" value="Pink">Pink
+      <input type="radio" name="color" value="Black">Black
+      <br><br>
+      <label for="city">What is the best city in the world?</label><br>
+      <input type="hidden" name="city-label" value="What is the best city in the world?">
+      <input type="radio" name="city" value="Lawrence"checked="checked">Lawrence
+      <input type="radio" name="city" value="Kansas City">Kansas City
+      <input type="radio" name="city" value="New York">New York
+      <input type="radio" name="city" value="Los Angeles">Los Angeles
+      <br><br>
+      <label for="drink">What is the best drink?</label><br>
+      <input type="hidden" name="drink-label" value="What is the best drink">
+      <input type="radio" name="drink" value="Water" checked="checked">Water
+      <input type="radio" name="drink" value="Juice">Juice
+      <input type="radio" name="drink" value="Gatorade">Gatorade
+      <input type="radio" name="drink" value="Soda">Soda
+      <br><br>
+      <label for="animal">What is the best animal?</label><br>
+      <input type="hidden" name="animal-label" value="What is the best animal?">
+      <input type="radio" name="animal" value="Giraffe" checked="checked">Giraffe
+      <input type="radio" name="animal" value="Emu">Emu
+      <input type="radio" name="animal" value="Kiwi">Kiwi
+      <input type="radio" name="animal" value="Hippopotamus">Hippopotamus
+      <br><br>
+      <label for="lang">What is the best programming language?</label><br>
+      <input type="hidden" name="lang-label" value="What is the best programming language?">
+      <input type="radio" name="lang" value="C++" checked="checked">C++
+      <input type="radio" name="lang" value="C#">C#
+      <input type="radio" name="lang" value="C">C
+      <input type="radio" name="lang" value="Objective-C">Objective-C
+      <br><br>
+      <input type="submit" name="submit" value="Submit">
+  </form>
 </body>
 </html>
